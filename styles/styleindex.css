@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*aici incepe stilizarea nav ului */
+
+nav {
+    background-color: #FF7420;
+    height: 5rem;
+}
+
+#meniu-Telefon {
+    display: none;
+}
+
+#meniu-Desktop {
+    display: flex;
+    align-items: center;
+    justify-content:space-around
+}
+
+#meniu-Desktop img{
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+#meniu-Desktop ul {
+    margin-top: 0.7rem;
+    display: flex;
+}
+
+#meniu-Desktop ul li {
+    padding: .5rem 3rem;
+    margin: 0rem .3rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    transition: .3s ease-in-out;
+}
+
+#meniu-Desktop ul li:hover {
+    color: #FF7420;
+    background-color: aliceblue;
+    transition: .3s ease-in-out;
+}
+
+#meniu-Desktop div {
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 7rem;
+}
+
+#meniu-Desktop div i {
+    color: aliceblue;
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: .3s ease-in-out;
+}
+
+#meniu-Desktop div i:hover {
+    color: #FF7420;
+    background-color: aliceblue;
+    transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 1150px) {
+    #meniu-Desktop ul li {
+        padding: .5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #meniu-Desktop ul li {
+        padding: .5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .disparitie {
+        display: none;
+    }
+    #meniu-Desktop {
+        display: none;
+    }
+    #meniu-Telefon ul {
+        position: absolute;
+        top: 5rem;
+        width: 100%;
+    }
+    #meniu-Telefon ul li {
+        background-color: #ca4d00;
+        color: aliceblue;
+        padding: 1.5rem;
+        display: block;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    #meniu-Telefon {
+        display: flex;
+        justify-content: space-around;
+    }
+    #meniu-Telefon img{
+        height: 3rem;
+        margin-top: 1rem;
+    }
+
+    #meniu-Telefon > i {
+        color: aliceblue;
+        margin-top: .6rem;
+        font-size: 1.8rem;
+        padding: 1rem;
+        transition: .3s ease-in-out;
+    }
+
+    #meniu-Telefon div {
+        display: flex;
+        width: 7rem;
+        justify-content: space-around;
+    }
+
+    #meniu-Telefon > div  i {
+        margin-top: .9rem;
+        font-size: 1.2rem;
+        padding: 1rem;
+        color: aliceblue;
+        transition: .3s ease-in-out;
+    }
+
+    #meniu-Telefon > div  i:hover {
+        color: #FF7420;
+        background-color: aliceblue;
+        transition: .3s ease-in-out;
+    }
+
+    #meniu-Telefon > i:hover {
+        background-color: aliceblue;
+        color: #FF7420;
+        transition: .3s ease-in-out;
+    }
+
+
+    
+}
